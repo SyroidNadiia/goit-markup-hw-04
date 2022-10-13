@@ -102,8 +102,8 @@ body {
   padding-bottom: 32px;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
@@ -365,7 +365,8 @@ img {
 }
 
 .examples-title,
-.team-title {
+.team-title,
+.clientage-title {
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;

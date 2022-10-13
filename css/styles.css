@@ -408,6 +408,36 @@ img {
   line-height: 1.88;
 }
 
+.clientage-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.clientage-item {
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  max-width: 170px;
+}
+
+.clientage-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clientage-icon {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.clientage-item:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.clientage-item:hover .clientage-icon {
+  fill: var(--accent-color);
+}
+
 footer {
   background-color: var(--footer-background-color);
 }

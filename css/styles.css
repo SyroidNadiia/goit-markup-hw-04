@@ -165,15 +165,25 @@ img {
   line-height: 1.71;
 }
 
-.benefits {
+.benefits-list {
+  list-style: none;
   display: flex;
 }
 
-.benefits .item {
-  max-width: 270px;
+.benefits-element {
+  min-width: 270px;
+  min-height: 120px;
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+  justify-content: center;
+  align-items: center;
+}
+.benefits-icon {
+  justify-content: center;
+  align-items: center;
 }
 
-.benefits .item:not(:last-child) {
+.benefits-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -450,6 +460,18 @@ img {
 .clientage-item:hover .clientage-icon,
 .clientage-item:focus .clientage-icon {
   fill: var(--accent-color);
+}
+
+.net-list {
+  list-style: none;
+  display: flex;
+}
+.net-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 footer {

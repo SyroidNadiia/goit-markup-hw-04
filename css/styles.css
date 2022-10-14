@@ -75,8 +75,9 @@ body {
   margin-left: 93px;
 }
 
-.auth-nav {
+.auth-list {
   display: flex;
+  list-style: none;
   margin-left: auto;
   align-content: center;
   gap: 30px;
@@ -93,7 +94,7 @@ body {
   padding-bottom: 32px;
 }
 
-.auth-nav .link {
+.auth-link {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -102,6 +103,8 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .site-nav .link:hover,
@@ -113,21 +116,21 @@ body {
   margin-right: 50px;
 }
 
-.auth-nav .item:not(:last-child) {
+.auth-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-link:hover,
+.auth-link:focus {
   color: var(--accent-color);
 }
 
-.auth-nav .link:hover .icon,
-.auth-nav .link:focus .icon {
+.auth-link:hover .auth-icon,
+.auth-link:focus .auth-icon {
   fill: var(--accent-color);
 }
 
-.auth-nav .icon {
+.auth-icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
@@ -171,13 +174,16 @@ img {
 }
 
 .benefits-element {
+  display: flex;
   min-width: 270px;
   min-height: 120px;
   border-radius: 4px;
   background-color: var(--secondary-background-color);
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
+
 .benefits-icon {
   justify-content: center;
   align-items: center;
@@ -313,7 +319,7 @@ img {
 }
 
 .team.list .text {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .button.secondary {
@@ -343,6 +349,12 @@ img {
 
   color: var(--white);
   background-color: var(--accent-color);
+}
+
+.button.list .button:hover,
+.button.list .button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .works.list {
@@ -430,6 +442,18 @@ img {
   line-height: 1.88;
 }
 
+.works-link {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.works-link:hover,
+.works-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .clientage-list {
   display: flex;
   list-style: none;
@@ -465,13 +489,32 @@ img {
 .net-list {
   list-style: none;
   display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 0px;
 }
+
 .net-link {
+  display: flex;
   width: 44px;
   height: 44px;
-  display: block;
-  background-color: transparent;
+  display: flex;
+  background-color: var(--white);
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.net-link:hover,
+.net-link:focus {
+  background-color: var(--accent-color);
+}
+
+.net-link:hover .net-icon,
+.net-link:focus .net-icon {
+  fill: var(--white);
 }
 
 footer {
@@ -527,4 +570,39 @@ footer {
 .address a:focus {
   text-decoration: underline;
   text-decoration-color: var(--accent-color);
+}
+
+.container.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.thumb-footer {
+  display: flex;
+  margin-top: 12px;
+  margin-left: 70px;
+  justify-content: flex-start;
+}
+
+.net-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.net-list.footer {
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.net-link.footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--white);
+}
+
+.net-link.footer:hover,
+.net-link.footer:focus {
+  background-color: var(--accent-color);
 }
